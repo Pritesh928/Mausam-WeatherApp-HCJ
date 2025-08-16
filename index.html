@@ -35,13 +35,13 @@
         </div>
     </div>
     <script>
-        const apiKey = "b5b4ac82f182584861acf1b5aac32170";
+        const apiKey = "b5b4ac82f182584861acf1b5aac3217"; // Add "0" to last of api key.--(Bug fix)
         const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
         const searchBox = document.querySelector(".search input");
         const searchBtn = document.querySelector(".search button");
         const weatherIcon = document.querySelector(".weather-icon");
     async function checkweather(city) {
-        const response = await fetch(apiUrl + city + '&appid=b5b4ac82f182584861acf1b5aac32170');
+        const response = await fetch(apiUrl + city + '&appid=b5b4ac82f182584861acf1b5aac3217'); // Add "0" to last of api key.--(Bug fix)
         var data = await response.json()
 
 
